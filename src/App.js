@@ -44,19 +44,19 @@ function App() {
         <div className="contact__icons">
           <button className="contact__icon">
             <a className="contact__icon__link" href="https://github.com/Michael-c7" target="_blank" rel="noreferrer">
-              <BsGithub/>
+              <BsGithub className="icon"/>
             </a>
           </button>
 
           <button className="contact__icon">
             <a className="contact__icon__link" href="https://www.linkedin.com/in/michaelcarr1999/" target="_blank" rel="noreferrer">
-              <BsLinkedin/>
+              <BsLinkedin className="icon"/>
             </a>
           </button>
 
           <button className="contact__icon">
             <a className="contact__icon__link" href="/download-resume-here" target="_blank" rel="noreferrer">
-              <GrDocumentDownload/>
+              <GrDocumentDownload className="icon"/>
             </a>
           </button>
         </div>
@@ -103,7 +103,7 @@ function App() {
               </p>
               <div  className="project__info__link">
                 <a  className="project__info" href="/">Source Code</a>
-                <a  className="project__info" href="/">Live Preview</a>
+                <a  className="project__info" href="/">Live Demo</a>
               </div>
             </div>
           </li>
