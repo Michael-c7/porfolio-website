@@ -6,68 +6,38 @@ import { FaTimes, FaBars } from "react-icons/fa";
 function App() {
   return (
     <main>
-      <nav className="navbar">
-        <ul className="navbar__items">
-          <li className="navbar__item">
-            <a href="#home">Home</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      {/*Put resume download in navbar
+          button type styles for it(it is a button)
+          */}
 
-      <aside className="sidebar">
-        <button className="sidebar__close-btn"><FaTimes/></button>
+    {/*close sidebar as soon as a link is clicked
+    OR i could have it dropdown from the top like OKFOOD demo site
+    */}
+    <nav id="navbar">
+      <ul>
+        <li className="navbar__item"><a href="#welcome-section">Home</a></li>
+        <li className="navbar__item"><a href="#skills">Skills</a> </li>
+        <li className="navbar__item"><a href="#projects">Projects</a></li>
+        <li className="navbar__item"><a href="#contact">Contact</a></li>
+        <li className="navbar__item">
+          <button className="resume-btn"><a href="#contact">Resume</a></button>
+        </li>
+      </ul>
+    </nav>
 
-        <ul className="sidebar__items">
-          <li className="sidebar__item">
-            <a href="#home">Home</a>
-          </li>
-          <li className="sidebar__item">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="sidebar__item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="sidebar__item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <div className="contact__icons">
-          <button className="contact__icon">
-            <a className="contact__icon__link" href="https://github.com/Michael-c7" target="_blank" rel="noreferrer">
-              <BsGithub className="icon"/>
-            </a>
-          </button>
-
-          <button className="contact__icon">
-            <a className="contact__icon__link" href="https://www.linkedin.com/in/michaelcarr1999/" target="_blank" rel="noreferrer">
-              <BsLinkedin className="icon"/>
-            </a>
-          </button>
-
-          <button className="contact__icon">
-            <a className="contact__icon__link" href="/download-resume-here" target="_blank" rel="noreferrer">
-              <GrDocumentDownload className="icon"/>
-            </a>
-          </button>
-        </div>
-      </aside>
+    <section id="welcome-section">
+      <div class="welcome-msg">
+        <h1>Hey I'm Michael</h1>
+        <h2>a web developer</h2>
+      </div>
+    </section>
 
 
       <section className="skills" id="skills">
         <h2 className="skills__heading">Skills</h2>
         <div className="skill__showcase">
           <div className="showcase__front-end">
-              <h2 className="front-end_heading">Front-end</h2>
+              <h2 className="front-end_heading">Front End</h2>
               <ul className="front-end__skills">
                 <li className="front-end__skill">html5</li>
                 <li className="front-end__skill">css3</li>
@@ -93,6 +63,10 @@ function App() {
       <section className="projects" id="projects">
         <ul className="projects__cards">
           <li className="project__card">
+            {/*
+            PLAY / PAUSE A GIF
+            https://codepen.io/chriscoyier/pen/pogQJER 
+            */}
             <img src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
             <div className="project__info">
               <h2 className="project__info__heading">Project name</h2>

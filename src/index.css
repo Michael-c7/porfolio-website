@@ -1,7 +1,7 @@
 :root {
   --primary-red:#d63031;
   --primary-white:#dfe6e9;
-  --primary-black:#2d3436;
+  --primary-black:#222222;
   /*dark to light*/
   --blue-000:#3867d6;
   --blue-050:#4b7bec;
@@ -52,6 +52,9 @@ button {
 }
 
 
+img {
+  max-width:250px;
+}
 
 
 
@@ -59,74 +62,89 @@ button {
 
 
 
+li {
+  display:inline;
+   margin:20px;
+}
 
-
-.navbar {
-  background-color:var(--blue-200);
-  color:#000;
-  padding:1.5rem 10rem;
+#navbar {
+  background-color:var(--primary-red);
+  color:var(--primary-white);
+  padding:20px;
   top:0;
   position:sticky;
   display:flex;
   justify-content:flex-end;
-  font-size:1.25rem;
-  z-index:50;
-}
-
-.navbar__items {
-  display:flex;
-}
-
-.navbar__item {
-  margin:0 1rem;
+  font-size:1.35rem;
+  z-index:1;
 }
 
 
 
+.resume-btn {
+  font-size:inherit;
+  color:inherit;
+  border:2px solid var(--primary-white);
+  padding:0.5rem 0.75rem;
+  border-radius: 1px;
+}
 
 
-.sidebar {
-  background:var(--primary-black);
-  color:#fff;
-  position: absolute;
-  z-index:100;
-  right:0;
-  top:0;
-  width:300px;
+
+
+
+
+
+
+
+
+
+#welcome-section {
+  position:relative;
+  text-align:center;
   height:100vh;
+  background-color:var(--primary-black);
+  color:var(--primary-white);
+}
 
-  padding:1rem;
+.welcome-msg {
+  font-size:2rem;
+  position:absolute;
+  top:30%;
+  right:0;
+  left:0;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:500px;
+}
 
-  font-size:1.5rem;
-
-  display:flex;
-  flex-direction: column;
+.welcome-msg h2 {
+  background-color:var(--primary-red);
 }
 
 
-.sidebar__close-btn {
-  font-size:1.5rem;
-  color:#fff;
-  align-self: flex-end;
+
+
+
+
+
+
+
+
+/*Skills*/
+.skills {
+  background-color:#fff;
+  /* height:50vh; */
+  
 }
 
-.sidebar__items {
-  display:flex;
-  flex-direction: column;
-  /* justify-content: flex-end;
-  align-items:flex-end; */
-  align-self: flex-end;
-  text-align: right;
-  margin:1rem 0 0.75rem 0;
-
+.skills__heading {
+  text-align: center;
+  font-size:2.75rem;
 }
 
-.contact__icons {
-  align-self: flex-end;
-}
-
-.contact__icons .icon {
-  color:#fff;
-  font-size:1.25rem;
-  margin:0 0.25rem;
+.front-end__skills {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.25;
 }
