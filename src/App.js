@@ -3,6 +3,12 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { GrDocumentDownload } from "react-icons/gr";
 import { FaTimes, FaBars } from "react-icons/fa";
 
+{/*
+PLAY / PAUSE A GIF
+https://codepen.io/chriscoyier/pen/pogQJER 
+*/}
+
+
 function App() {
   return (
     <main>
@@ -13,7 +19,7 @@ function App() {
     {/*close sidebar as soon as a link is clicked
     OR i could have it dropdown from the top like OKFOOD demo site
     */}
-    <nav id="navbar">
+    <nav className="navbar" id="navbar">
       <ul>
         <li className="navbar__item"><a href="#welcome-section">Home</a></li>
         <li className="navbar__item"><a href="#skills">Skills</a> </li>
@@ -25,7 +31,7 @@ function App() {
       </ul>
     </nav>
 
-    <section id="welcome-section">
+    <section className="welcome-section" id="welcome-section">
       <div class="welcome-msg">
         <h1>Hey I'm Michael</h1>
         <h2>a web developer</h2>
@@ -33,8 +39,11 @@ function App() {
     </section>
 
 
-      <section className="skills" id="skills">
-        <h2 className="skills__heading">Skills</h2>
+    <section className="skills" id="skills">
+        <header className="skills__header underline-container">
+          <h2 className="skills__heading">Skills</h2>
+          <div className="underline"></div>
+        </header>
         <div className="skill__showcase">
           <div className="showcase__showcase__container">
               <h2 className="front-end_heading">Front End</h2>
@@ -59,15 +68,13 @@ function App() {
       </section>
 
 
-
       <section className="projects" id="projects">
-        <h2 className="projects__heading">Projects</h2>
+        <header className="projects__header">
+            <h2 className="projects__heading">Projects</h2>
+            <div className="underline-l"></div>
+        </header>
         <ul className="projects__cards">
           <li className="project__card">
-            {/*
-            PLAY / PAUSE A GIF
-            https://codepen.io/chriscoyier/pen/pogQJER 
-            */}
             <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
             <div className="project__info">
               <h2 className="project__info__heading">Project name</h2>
@@ -76,18 +83,75 @@ function App() {
                 Rerum eveniet amet odit aperiam,
                 provident cum possimus sapiente minus quos! Ipsum?
               </p>
-              <div  className="project__info__link">
-                <a  className="project__info" href="/">Source Code</a>
-                <a  className="project__info" href="/">Live Demo</a>
+              <div className="project__info__links">
+                <a className="project__info__link" href="/">Source Code</a>
+                <a className="project__info__link" href="/">Live Demo</a>
+              </div>
+            </div>
+          </li>
+
+          <li className="project__card">
+            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
+            <div className="project__info">
+              <h2 className="project__info__heading">Project name</h2>
+              <p  className="project__info__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum eveniet amet odit aperiam,
+                provident cum possimus sapiente minus quos! Ipsum?
+              </p>
+              <div className="project__info__links">
+                <a className="project__info__link" href="/">Source Code</a>
+                <a className="project__info__link" href="/">Live Demo</a>
+              </div>
+            </div>
+          </li>
+
+          <li className="project__card">
+            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
+            <div className="project__info">
+              <h2 className="project__info__heading">Project name</h2>
+              <p  className="project__info__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum eveniet amet odit aperiam,
+                provident cum possimus sapiente minus quos! Ipsum?
+              </p>
+              <div className="project__info__links">
+                <a className="project__info__link" href="/">Source Code</a>
+                <a className="project__info__link" href="/">Live Demo</a>
+              </div>
+            </div>
+          </li>
+
+          <li className="project__card">
+            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
+            <div className="project__info">
+              <h2 className="project__info__heading">Project name</h2>
+              <p  className="project__info__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum eveniet amet odit aperiam,
+                provident cum possimus sapiente minus quos! Ipsum?
+              </p>
+              <div className="project__info__links">
+                <a className="project__info__link" href="/">Source Code</a>
+                <a className="project__info__link" href="/">Live Demo</a>
               </div>
             </div>
           </li>
         </ul>
       </section>
+    
+    
+
+
+
+      
 
 
       <section className="contact" id="contact">
-        <h2 className="contact__heading">Contact</h2>
+        <header className="contact__header">
+            <h2 className="contact__heading">Contact</h2>
+            <div className="underline"></div>
+        </header>
 
         <div className="contact__item">Phone: <a href="tel:9522972048">(952) 297-2048</a></div>
         <div className="contact__item">Email: <a href="mailto: mcarr2468@gmail.com">mcarr2468@gmail.com</a></div>
