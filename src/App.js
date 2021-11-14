@@ -20,7 +20,7 @@ function App() {
         <li className="navbar__item"><a href="#projects">Projects</a></li>
         <li className="navbar__item"><a href="#contact">Contact</a></li>
         <li className="navbar__item">
-          <button className="resume-btn"><a href="#contact">Resume</a></button>
+          <button className="resume-btn"><a href="/download-resume-link-here">Resume</a></button>
         </li>
       </ul>
     </nav>
@@ -36,18 +36,18 @@ function App() {
       <section className="skills" id="skills">
         <h2 className="skills__heading">Skills</h2>
         <div className="skill__showcase">
-          <div className="showcase__front-end">
+          <div className="showcase__showcase__container">
               <h2 className="front-end_heading">Front End</h2>
               <ul className="front-end__skills">
-                <li className="front-end__skill">html5</li>
-                <li className="front-end__skill">css3</li>
+                <li className="front-end__skill">HTML</li>
+                <li className="front-end__skill">CSS</li>
                 <li className="front-end__skill">Sass</li>
                 <li className="front-end__skill">Javascript</li>
                 <li className="front-end__skill">React</li>
                 <li className="front-end__skill">Redux</li>
               </ul>
             </div>
-            <div className="showcase__tools">
+            <div className="showcase__showcase__container">
               <h2 className="front-end_heading">Tools</h2>
               <ul className="front-end__skills">
                 <li className="front-end__skill">Git & github</li>
@@ -61,13 +61,14 @@ function App() {
 
 
       <section className="projects" id="projects">
+        <h2 className="projects__heading">Projects</h2>
         <ul className="projects__cards">
           <li className="project__card">
             {/*
             PLAY / PAUSE A GIF
             https://codepen.io/chriscoyier/pen/pogQJER 
             */}
-            <img src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
+            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
             <div className="project__info">
               <h2 className="project__info__heading">Project name</h2>
               <p  className="project__info__description">
@@ -88,34 +89,24 @@ function App() {
       <section className="contact" id="contact">
         <h2 className="contact__heading">Contact</h2>
 
-        <div>Phone: <a href="tel:9522972048">(952) 297-2048</a></div>
-        <div>Email: <a href="mailto: mcarr2468@gmail.com">mcarr2468@gmail.com</a></div>
+        <div className="contact__item">Phone: <a href="tel:9522972048">(952) 297-2048</a></div>
+        <div className="contact__item">Email: <a href="mailto: mcarr2468@gmail.com">mcarr2468@gmail.com</a></div>
         <div className="contact__icons">
           <button className="contact__icon">
             <a className="contact__icon__link" href="https://github.com/Michael-c7" target="_blank" rel="noreferrer">
-              <BsGithub/>
+              <BsGithub className="icon"/>
             </a>
           </button>
 
           <button className="contact__icon">
             <a className="contact__icon__link" href="https://www.linkedin.com/in/michaelcarr1999/" target="_blank" rel="noreferrer">
-              <BsLinkedin/>
-            </a>
-          </button>
-
-          <button className="contact__icon">
-            <a className="contact__icon__link" href="/download-resume-here" target="_blank" rel="noreferrer">
-              <GrDocumentDownload/>
+              <BsLinkedin className="icon"/>
             </a>
           </button>
         </div>
-       
       </section>
     </main>
   );
 }
 
 export default App;
-
-
-// , 
