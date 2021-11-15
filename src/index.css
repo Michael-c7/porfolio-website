@@ -2,6 +2,7 @@
   --primary-red:#d63031;
   --primary-white:#F1F5F8;
   --primary-black:#222222;
+  --second-black:rgba(34, 34, 34, 0.97);
   /*dark to light*/
   --blue-000:#3867d6;
   --blue-050:#4b7bec;
@@ -104,6 +105,24 @@ li {
   height:100vh;
   background-color:var(--primary-black);
   color:var(--primary-white);
+
+
+  background: linear-gradient(-45deg, var(--primary-black) 0%,
+  #303952 25%, #2d3436 50%, #222 75%, #1e272e 100%);
+  background-size:  400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
 .welcome-msg {
@@ -132,7 +151,9 @@ li {
 
 /*Skills*/
 .skills {
-  background:#F1F5F8;
+  /* background:#F1F5F8; */
+  background:var(--second-black);
+  color:var(--primary-white);
   padding:var(--section-padding);
 }
 
@@ -179,7 +200,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width:40ch;
+  width:35ch;
   line-height: 0;
   font-size: 1.15rem;
 }
@@ -207,10 +228,13 @@ li {
 }
 
 .projects__cards {
-  margin:3rem 0.5rem;
+  margin:3rem auto;
   display:flex;
   justify-content: center;
+  align-items:center;
   flex-wrap: wrap;
+  max-width:1000px;
+  grid-gap:1.5rem;
 }
 
 .project__card {
@@ -262,6 +286,9 @@ li {
 .contact {
   padding:var(--section-padding);
   text-align: center;
+
+  background:var(--second-black);
+  color:var(--primary-white);
 }
 
 
@@ -278,6 +305,8 @@ li {
 .contact__icons .icon {
   font-size:1.75rem;
   margin:0.5rem 0.35rem;
+
+  color:var(--primary-white);
 }
 
 
