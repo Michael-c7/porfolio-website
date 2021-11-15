@@ -75,17 +75,15 @@ function App() {
         </header>
         <ul className="projects__cards">
           <li className="project__card">
-            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
+            <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>
             <div className="project__info">
-              <h2 className="project__info__heading">Project name</h2>
+              <h2 className="project__info__heading">OKFOOD</h2>
               <p  className="project__info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum eveniet amet odit aperiam,
-                provident cum possimus sapiente minus quos! Ipsum?
+              A restaurant website.
               </p>
               <div className="project__info__links">
-                <a className="project__info__link" href="/">Source Code</a>
-                <a className="project__info__link" href="/">Live Demo</a>
+                <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+                <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
               </div>
             </div>
           </li>
