@@ -58,7 +58,7 @@ button {
 
 
 /*TODO
-- more info popup
+- more info popup [X]
 only have one instance of the popup and load
 the data in by getting from a module(object)
   - will have a video of a full demo of the app(with commentary maybe)
@@ -68,6 +68,9 @@ the data in by getting from a module(object)
 - mobile view
 
 - aside sidebar, get always 100% height on screen
+
+- on click of more info btn get
+ the data to show in the popup (get from an object)
 */
 
 
@@ -352,7 +355,8 @@ li {
 .more-info-popup__outer {
   position: absolute;
   top:0;
-  width:100%;
+  left:0;
+  width:100vw;
   height:100vh;
   background:#61616194;
   z-index:-150;
@@ -363,6 +367,11 @@ li {
 body {
   /* overflow: hidden; */
 }
+
+.show-popup--body {
+  overflow: hidden;
+}
+
 
 .show-popup {
   z-index:150;
