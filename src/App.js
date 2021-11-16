@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsInfoCircleFill } from "react-icons/bs";
 import { GrDocumentDownload } from "react-icons/gr";
 import { FaTimes, FaBars } from "react-icons/fa";
 
@@ -74,68 +74,117 @@ function App() {
             <div className="underline-l"></div>
         </header>
         <ul className="projects__cards">
+        {/*TEST CARD */}
           <li className="project__card">
-            <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>
-            <div className="project__info">
-              <h2 className="project__info__heading">OKFOOD</h2>
-              <p  className="project__info__description">
-              A restaurant website.
-              </p>
-              <div className="project__info__links">
-                <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
-                <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+            <div className="project__card__inner">
+              <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>            <button className="more-info__btn">
+                <BsInfoCircleFill className="icon"/>
+              </button>
+              <div className="project__info">
+                <h2 className="project__info__heading">OKFOOD</h2>
+                <p className="project__info__description">
+                A restaurant website.
+                </p>
+                <div className="project__info__links">
+                  <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+                  <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
               </div>
             </div>
           </li>
 
           <li className="project__card">
-            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
-            <div className="project__info">
-              <h2 className="project__info__heading">Project name</h2>
-              <p  className="project__info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum eveniet amet odit aperiam,
-                provident cum possimus sapiente minus quos! Ipsum?
-              </p>
-              <div className="project__info__links">
-                <a className="project__info__link" href="/">Source Code</a>
-                <a className="project__info__link" href="/">Live Demo</a>
+            <div className="project__card__inner">
+              <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>            <button className="more-info__btn">
+                <BsInfoCircleFill className="icon"/>
+              </button>
+              <div className="project__info">
+                <h2 className="project__info__heading">OKFOOD</h2>
+                <p className="project__info__description">
+                A restaurant website.
+                </p>
+                <div className="project__info__links">
+                  <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+                  <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
               </div>
             </div>
           </li>
 
           <li className="project__card">
-            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
-            <div className="project__info">
-              <h2 className="project__info__heading">Project name</h2>
-              <p  className="project__info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum eveniet amet odit aperiam,
-                provident cum possimus sapiente minus quos! Ipsum?
-              </p>
-              <div className="project__info__links">
-                <a className="project__info__link" href="/">Source Code</a>
-                <a className="project__info__link" href="/">Live Demo</a>
+            <div className="project__card__inner">
+              <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>            <button className="more-info__btn">
+                <BsInfoCircleFill className="icon"/>
+              </button>
+              <div className="project__info">
+                <h2 className="project__info__heading">OKFOOD</h2>
+                <p className="project__info__description">
+                A restaurant website.
+                </p>
+                <div className="project__info__links">
+                  <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+                  <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
               </div>
             </div>
           </li>
 
           <li className="project__card">
-            <img className="project__card__img" src="https://html-css-portfolio-css-grid-project.netlify.app/images/project-1.jpeg" alt="project"/>
-            <div className="project__info">
-              <h2 className="project__info__heading">Project name</h2>
-              <p  className="project__info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Rerum eveniet amet odit aperiam,
-                provident cum possimus sapiente minus quos! Ipsum?
-              </p>
-              <div className="project__info__links">
-                <a className="project__info__link" href="/">Source Code</a>
-                <a className="project__info__link" href="/">Live Demo</a>
+            <div className="project__card__inner">
+              <img className="project__card__img" src="https://camo.githubusercontent.com/00568dc18a19ffbd4b839fa4404c0816b4fe59e272aecd939fb85d28bd88b81e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f76334f614a6a72657832444c4848634742512f67697068792e676966" alt="project"/>            <button className="more-info__btn">
+                <BsInfoCircleFill className="icon"/>
+              </button>
+              <div className="project__info">
+                <h2 className="project__info__heading">OKFOOD</h2>
+                <p className="project__info__description">
+                A restaurant website.
+                </p>
+                <div className="project__info__links">
+                  <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+                  <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
               </div>
             </div>
           </li>
         </ul>
+
+        <section className="more-info-popup">
+          <button className="close-btn"><FaTimes className="icon"/></button>
+
+          <div className="more-info-popup__inner">
+            <div className="info__video-details">
+              {/* Video here */}
+              <h2 className="info__video__heading">Full Demo</h2>
+              <iframe className="info__video" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div className="more-info-popup__details-container">
+              <div className="info__description">
+                <h2 className="description__heading">Description</h2>
+                <p>
+                In this quick video, 
+                I’ll show you how to embed a YouTube video in HTML,
+                how to make it responsive on any sized device and I’ll reveal
+                how you can easily adjust embed options such as autoplay.
+                This will work for any iframes such as google maps iframe.
+                </p>
+              </div>
+              <div className="info__tech">
+                <h2 className="info__tech__heading">Tech Used</h2>
+                <ul className="info__tech__items">
+                  <li className="info__tech__item">HTML / CSS</li>
+                  <li className="info__tech__item">CSS</li>
+                  <li className="info__tech__item">Sass</li>
+                  <li className="info__tech__item">React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <div className="project__info__links">
+              <a className="project__info__link" href="https://github.com/Michael-c7/OKFOOD-restaurant" target="_blank" rel="noreferrer">Source Code</a>
+              <a className="project__info__link" href="https://amazing-rosalind-9ceb00.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+        </section>
       </section>
     
     

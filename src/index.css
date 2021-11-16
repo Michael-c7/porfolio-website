@@ -56,7 +56,25 @@ button {
 }
 
 
+/*TODO
+-more info btn
 
+-more info popup
+only have one instance of the popup and load
+the data in by getting from a module(object)
+  -will have a video of a full demo of the app(with commentary maybe)
+  - what tech was used & why
+  - a description in bullets points
+  
+
+- fix project card to get source & live demo tag
+links to always stay to bottom of card w/ css grid
+
+-mobile view
+
+- aside sidebar, get always 100 height on screen
+
+*/
 
 
 
@@ -216,6 +234,7 @@ li {
 
 
 .projects {
+  position: relative;
   background-color: var(--primary-black);
   color:var(--primary-white);
   padding:var(--section-padding);
@@ -237,16 +256,16 @@ li {
   grid-gap:1.5rem;
 }
 
-.project__card {
+.project__card,
+.project__card__inner {
   position: relative;
   background-color:var(--primary-white);
   color:var(--primary-black);
-  display:flex;
-  flex-direction: column;
   width:20rem;
   border-radius: 3px;
-  height:377px;
-  
+  height:380px;
+  display:flex;
+  flex-direction: column;
 }
 
 .project__card__img {
@@ -257,17 +276,48 @@ li {
 }
 
 .project__info {
+  flex:1;
   position: relative;
   padding:0.75rem;
-  height:100%;
+
+  display:grid;
+  grid-template-rows:2rem 1fr auto;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
-.project__info__heading {
 
+
+.more-info__btn {
+  
+  position: absolute;
+  background-color: var(--primary-white);
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left:50%;
+  top:45%;
+  transform: translate(-50%, -45%);
+  cursor: pointer;
+}
+
+.more-info__btn .icon {
+  font-size:2.25rem;
+  /* color: var(--primary-red); */
+}
+
+
+
+
+.project__info__heading {
+  margin-top:0.75rem;
 }
 
 .project__info__description {
-  margin:0.85rem 0;
+  margin:calc(0.85rem + 0.75rem) 0 0.85rem 0;
 }
 
 .project__info__links {
@@ -277,7 +327,6 @@ li {
   align-items: center;
   flex-wrap: wrap;
   color:var(--primary-red);
-  /* top:45%; */
 }
 
 .project__info__link:hover {
@@ -286,15 +335,61 @@ li {
 
 
 
+.more-info-popup {
+  position: absolute;
+  top:0;
+  background:var(--primary-black);
+  color:var(--primary-white);
+  filter:drop-shadow(0px 0px 7px #383838);
+
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+
+  padding:1rem;
+  width:auto;
+  height:auto;
+}
+
+
+.more-info-popup__inner {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center;
+  align-items:center; */
+  grid-column-gap:1rem;
+}
+
+.close-btn .icon {
+  position: relative;
+  color:var(--primary-white);
+  font-size:2rem;
+  cursor: pointer;
+}
+
+.info__video {
+  position: relative;
+}
+
+.info__video {
+  width:100%;
+  height:auto;
+}
+
+.more-info-popup .project__info__links {
+  width:calc(50% - 0.5rem);
+  padding:0.5rem 0.75rem;
+  border-radius: 3px;
+  background:rgba(95, 95, 95, 0.1);
+}
 
 
 
 .contact {
   padding:var(--section-padding);
-  text-align: center;
-
   background:var(--second-black);
   color:var(--primary-white);
+  text-align: center;
 }
 
 
