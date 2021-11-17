@@ -12,6 +12,8 @@
 
 
   --section-padding:6rem 0.25rem;
+
+  --medium-query:640px;
 }
 
 *,
@@ -65,7 +67,8 @@ the data in by getting from a module(object)
   - what tech was used & why
   - a description in bullets points
 
-- mobile view
+- view on very big screens (use vw units)
+  eg: font-size:5.5vw;
 
 - aside sidebar, get always 100% height on screen
 
@@ -73,6 +76,15 @@ the data in by getting from a module(object)
  the data to show in the popup (get from an object)
 */
 
+/*
+Mobile view checklist
+- navbar
+- mobile menu
+- skills
+- popup menu
+- welcome msg
+
+*/
 
 
 
@@ -82,6 +94,17 @@ li {
    margin:20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .navbar {
   background-color:var(--primary-red);
   color:var(--primary-white);
@@ -90,10 +113,10 @@ li {
   position:sticky;
   display:flex;
   justify-content:flex-end;
+  align-items:center;
   font-size:1.35rem;
   z-index:1;
 }
-
 
 .navbar__item {
   position: relative;
@@ -117,14 +140,58 @@ li {
   transform-origin: left bottom;
 }
 
-
-
 .resume-btn {
   font-size:inherit;
   color:inherit;
   border:2px solid var(--primary-white);
   padding:0.5rem 0.75rem;
   border-radius: 1px;
+}
+
+.open-sidebar-btn {
+  position: relative;
+  color:inherit;
+  font-size:2rem;
+  display:none;
+}
+/*
+padding:20px;
+  top:0;
+  position:sticky;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  font-size:1.35rem;
+  z-index:1;
+*/
+
+
+
+
+
+.sidebar {
+  color:var(--primary-white);
+  background:#d94821;
+  max-height: 0;
+  transition: max-height 0.45s ease-out;
+  overflow: hidden;
+  font-size:1.35rem;
+  /*72px is the height of the navbar*/
+  top:72px;
+  position: sticky;
+  z-index:1;
+}
+
+.sidebar__items {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.sidebar-open {
+  max-height:500px;
+  transition: max-height 0.45s ease-in;
 }
 
 
@@ -484,4 +551,99 @@ body {
 .contact__item {
   margin:0.5rem 0;
   font-size:1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*medium mobile view*/
+@media (max-width:640px) {
+  body {
+    /*Fixes problem where
+    HTML body does not fill the
+    complete width on mobile*/
+    position: absolute;
+
+    /*The default white background
+    still is a little
+    visible sometimes so setting
+    it to the color we use
+    as the background color
+    makes this  less noticeable*/
+    background:var(--primary-black);
+  }
+
+  .navbar__items {
+    display:none;
+  }
+
+  .welcome-section {
+    background:var(--primary-black);
+  }
+
+  .welcome-msg {
+    font-size:5.5vw;
+    max-width:85%;
+  }
+  
+
+  .open-sidebar-btn {
+    display:flex;
+  }
+
+  .front-end__skills {
+    flex-direction: column;
+  }
+
+
+  .more-info-popup {
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding:1rem;
+    width:85%;
+    height:85%;
+    border-radius: 5px;
+  }
+
+  
+
+  .more-info-popup__inner {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items:center; */
+    grid-column-gap:0rem;
+    grid-row-gap:1rem;
+  }
+  /*CURRENTLY WORKING ON MOBILE VIEW OF POPUP MENU*/
+  .info__video-container {
+    width:100%;
+    height:100%;
+  }
+  
+  .info__video {
+    position: relative;
+    width:100%;
+    height:inherit;
+  }
+
+  .more-info-popup .project__info__links {
+    width:calc(100% - 0.5rem);
+    padding:0.5rem 0rem;
+    margin-top:1rem;
+  }
 }
