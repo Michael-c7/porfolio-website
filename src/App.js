@@ -9,14 +9,17 @@ import Popupup from './Popupup';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  // first project is 0, second project is 1, ect...
+  const [currentProjectDetailsNumber, setCurrentProjectDetailsNumber] = useState(0);
+  
   return (
     <main>
       <Navbar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}/>
       <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}/>
       <Welcome/>
       <Skills/>
-      <Projects/>
-      <Popupup/>
+      <Projects setCurrentProjectDetailsNumber={setCurrentProjectDetailsNumber}/>
+      <Popupup currentProjectDetailsNumber={currentProjectDetailsNumber}/>
       <Contact/>
     </main>
   );

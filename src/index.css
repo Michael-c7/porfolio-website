@@ -62,23 +62,10 @@ button {
   border:none;
 }
 
-
-/*TODO
-- view on very big screens (use vw units)
-  eg: font-size:5.5vw;
-
-- on click of more info btn get
- the data to show in the popup (get from an object)
-*/
-
-
-
-
 li {
   display:inline;
    margin:20px;
 }
-
 
 
 
@@ -139,16 +126,6 @@ li {
   font-size:2rem;
   display:none;
 }
-/*
-padding:20px;
-  top:0;
-  position:sticky;
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
-  font-size:1.35rem;
-  z-index:1;
-*/
 
 
 
@@ -195,8 +172,6 @@ padding:20px;
   height:100vh;
   background-color:var(--primary-black);
   color:var(--primary-white);
-
-
   background: linear-gradient(-45deg, var(--primary-black) 0%,
   #303952 25%, #2d3436 50%, #222 75%, #1e272e 100%);
   background-size:  400% 400%;
@@ -484,7 +459,6 @@ padding:20px;
 .description__text {
   max-width:50ch;
   margin-left:1.25rem;
-
 }
 
 .info__tech {
@@ -504,7 +478,6 @@ padding:20px;
   text-align: center;
 }
 
-
 .contact__header {
   margin:0 0 2rem 0;
   letter-spacing: 0.75px;
@@ -521,7 +494,6 @@ padding:20px;
   margin:0.5rem 0.35rem;
   color:var(--primary-white);
 }
-
 
 .contact__item {
   margin:0.5rem 0;
