@@ -54,9 +54,9 @@ const Popupup = ({currentProjectDetailsNumber}) => {
                 <div className="info__tech">
                   <h2 className="info__tech__heading">Tech Used</h2>
                   <ul className="info__tech__items">
-                    {tech.map((tech) => {
+                    {tech.map((tech, index) => {
                       return (
-                        <li className="info__tech__item">{tech}</li>
+                        <li className="info__tech__item" key={index}>{tech}</li>
                       )
                     })}
                   </ul>
