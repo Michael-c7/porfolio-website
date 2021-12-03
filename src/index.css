@@ -651,3 +651,45 @@ li {
   }
   
 }
+
+
+
+
+
+/*new card type*/
+.project__info__heading {
+  text-align: center;
+  margin:0;
+}
+
+.project__info {
+  flex:1;
+  position: relative;
+  padding:0.75rem;
+
+  display:grid;
+  grid-template-rows:1fr 1fr 1fr;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+
+.btn-primary {
+  background-color: var(--primary-red);
+  color:var(--primary-white);
+  border-radius: 5px;
+  margin:0.25rem 0;
+  padding:0.75rem 0;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: var(--primary-black);
+  color:var(--primary-white);
+  border-radius: 5px;
+  margin:0.25rem 0;
+}
+
+.btn-secondary a:hover {
+  text-decoration: none;
+}
